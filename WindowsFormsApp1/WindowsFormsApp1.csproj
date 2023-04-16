@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bilgi Düzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgi Düzenleme.Designer.cs">
+      <DependentUpon>Bilgi Düzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor Detay.Designer.cs">
+      <DependentUpon>Doktor Detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor Giris.Designer.cs">
+      <DependentUpon>Doktor Giris.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bilgi Düzenleme.resx">
+      <DependentUpon>Bilgi Düzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor Detay.resx">
+      <DependentUpon>Doktor Detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor Giris.resx">
+      <DependentUpon>Doktor Giris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

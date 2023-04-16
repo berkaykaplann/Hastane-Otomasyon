@@ -43,7 +43,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(253, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 45);
+            this.label1.Size = new System.Drawing.Size(248, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "HASTA GİRİŞİ";
             // 
@@ -119,7 +119,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormHastaGiris";
-            this.Text = "V";
             this.ResumeLayout(false);
             this.PerformLayout();
 

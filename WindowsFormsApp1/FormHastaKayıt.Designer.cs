@@ -188,7 +188,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormHastaKayıt";
-            this.Text = "FormHastaKayıt";
+            this.Text = "HastaKayıt";
             this.ResumeLayout(false);
             this.PerformLayout();
 
