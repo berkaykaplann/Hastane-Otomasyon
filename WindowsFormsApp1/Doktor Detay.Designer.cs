@@ -150,9 +150,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(14, 488);
+            this.button1.Location = new System.Drawing.Point(14, 489);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 53);
+            this.button1.Size = new System.Drawing.Size(191, 52);
             this.button1.TabIndex = 4;
             this.button1.Text = "Bilgilerimi Düzenle";
             this.button1.UseVisualStyleBackColor = true;
@@ -160,9 +160,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(200, 489);
+            this.button2.Location = new System.Drawing.Point(211, 489);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 52);
+            this.button2.Size = new System.Drawing.Size(193, 52);
             this.button2.TabIndex = 5;
             this.button2.Text = "Duyuruları Görüntüle";
             this.button2.UseVisualStyleBackColor = true;
@@ -170,9 +170,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(115, 547);
+            this.button3.Location = new System.Drawing.Point(14, 547);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 49);
+            this.button3.Size = new System.Drawing.Size(390, 49);
             this.button3.TabIndex = 6;
             this.button3.Text = "Çıkış";
             this.button3.UseVisualStyleBackColor = true;
