@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHastaKayıt));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.maskedTextBoxTC = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxAd = new System.Windows.Forms.TextBox();
+            this.textBoxSoyad = new System.Windows.Forms.TextBox();
+            this.maskedTextBoxTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.comboBoxCinsiyet = new System.Windows.Forms.ComboBox();
+            this.textBoxSifre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -103,59 +104,59 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "ŞİFRE:";
             // 
-            // maskedTextBox1
+            // maskedTextBoxTC
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(229, 303);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(229, 30);
-            this.maskedTextBox1.TabIndex = 7;
+            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxTC.Location = new System.Drawing.Point(229, 303);
+            this.maskedTextBoxTC.Mask = "00000000000";
+            this.maskedTextBoxTC.Name = "maskedTextBoxTC";
+            this.maskedTextBoxTC.Size = new System.Drawing.Size(229, 30);
+            this.maskedTextBoxTC.TabIndex = 4;
             // 
-            // textBox1
+            // textBoxAd
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(229, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 30);
-            this.textBox1.TabIndex = 6;
+            this.textBoxAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxAd.Location = new System.Drawing.Point(229, 109);
+            this.textBoxAd.Name = "textBoxAd";
+            this.textBoxAd.Size = new System.Drawing.Size(229, 30);
+            this.textBoxAd.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxSoyad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(229, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 30);
-            this.textBox2.TabIndex = 8;
+            this.textBoxSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSoyad.Location = new System.Drawing.Point(229, 179);
+            this.textBoxSoyad.Name = "textBoxSoyad";
+            this.textBoxSoyad.Size = new System.Drawing.Size(229, 30);
+            this.textBoxSoyad.TabIndex = 2;
             // 
-            // maskedTextBox2
+            // maskedTextBoxTelefon
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(229, 247);
-            this.maskedTextBox2.Mask = "(999) 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(229, 30);
-            this.maskedTextBox2.TabIndex = 9;
+            this.maskedTextBoxTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxTelefon.Location = new System.Drawing.Point(229, 247);
+            this.maskedTextBoxTelefon.Mask = "(999) 000-0000";
+            this.maskedTextBoxTelefon.Name = "maskedTextBoxTelefon";
+            this.maskedTextBoxTelefon.Size = new System.Drawing.Size(229, 30);
+            this.maskedTextBoxTelefon.TabIndex = 3;
             // 
-            // comboBox1
+            // comboBoxCinsiyet
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxCinsiyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBoxCinsiyet.FormattingEnabled = true;
+            this.comboBoxCinsiyet.Items.AddRange(new object[] {
             "ERKEK ",
             "KADIN"});
-            this.comboBox1.Location = new System.Drawing.Point(229, 373);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(229, 33);
-            this.comboBox1.TabIndex = 10;
+            this.comboBoxCinsiyet.Location = new System.Drawing.Point(229, 373);
+            this.comboBoxCinsiyet.Name = "comboBoxCinsiyet";
+            this.comboBoxCinsiyet.Size = new System.Drawing.Size(229, 33);
+            this.comboBoxCinsiyet.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxSifre
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(229, 438);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(229, 30);
-            this.textBox3.TabIndex = 11;
+            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSifre.Location = new System.Drawing.Point(229, 438);
+            this.textBoxSifre.Name = "textBoxSifre";
+            this.textBoxSifre.Size = new System.Drawing.Size(229, 30);
+            this.textBoxSifre.TabIndex = 6;
             // 
             // button1
             // 
@@ -167,27 +168,33 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "KAYIT OL";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormHastaKayıt
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(621, 639);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSifre);
+            this.Controls.Add(this.comboBoxCinsiyet);
+            this.Controls.Add(this.maskedTextBoxTelefon);
+            this.Controls.Add(this.textBoxSoyad);
+            this.Controls.Add(this.maskedTextBoxTC);
+            this.Controls.Add(this.textBoxAd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormHastaKayıt";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HastaKayıt";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,12 +209,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTC;
+        private System.Windows.Forms.TextBox textBoxAd;
+        private System.Windows.Forms.TextBox textBoxSoyad;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTelefon;
+        private System.Windows.Forms.ComboBox comboBoxCinsiyet;
+        private System.Windows.Forms.TextBox textBoxSifre;
         private System.Windows.Forms.Button button1;
     }
 }
