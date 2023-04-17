@@ -52,6 +52,12 @@
     <Compile Include="Bilgi Düzenleme.Designer.cs">
       <DependentUpon>Bilgi Düzenleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Brans Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brans Paneli.Designer.cs">
+      <DependentUpon>Brans Paneli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doktor Bilgi Düzenleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Doktor Giris.Designer.cs">
       <DependentUpon>Doktor Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doktor Paneli.Designer.cs">
+      <DependentUpon>Doktor Paneli.cs</DependentUpon>
     </Compile>
     <Compile Include="Duyurular.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randevu Listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu Listesi.Designer.cs">
+      <DependentUpon>Randevu Listesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="SekreterDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,8 +132,12 @@
     <Compile Include="SekreterGiris.Designer.cs">
       <DependentUpon>SekreterGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sqlbaglanti.cs" />
     <EmbeddedResource Include="Bilgi Düzenleme.resx">
       <DependentUpon>Bilgi Düzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brans Paneli.resx">
+      <DependentUpon>Brans Paneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor Bilgi Düzenleme.resx">
       <DependentUpon>Doktor Bilgi Düzenleme.cs</DependentUpon>
@@ -125,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doktor Giris.resx">
       <DependentUpon>Doktor Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doktor Paneli.resx">
+      <DependentUpon>Doktor Paneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Duyurular.resx">
       <DependentUpon>Duyurular.cs</DependentUpon>
@@ -150,6 +175,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Randevu Listesi.resx">
+      <DependentUpon>Randevu Listesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SekreterDetay.resx">
       <DependentUpon>SekreterDetay.cs</DependentUpon>
     </EmbeddedResource>
