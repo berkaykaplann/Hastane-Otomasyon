@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             if(dr.Read())
             {
                 HastaDetay fr = new HastaDetay();
+                fr.tc = maskedTextBoxTC.Text;
                 fr.Show();
                 this.Hide();
             }

@@ -39,7 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxBrans = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,23 +74,23 @@
             // 
             this.lblTC.AutoSize = true;
             this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTC.ForeColor = System.Drawing.Color.Black;
-            this.lblTC.Location = new System.Drawing.Point(122, 79);
+            this.lblTC.ForeColor = System.Drawing.Color.Blue;
+            this.lblTC.Location = new System.Drawing.Point(122, 129);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(60, 22);
+            this.lblTC.Size = new System.Drawing.Size(120, 22);
             this.lblTC.TabIndex = 3;
-            this.lblTC.Text = "NULL";
+            this.lblTC.Text = "0000000000";
             // 
             // lblADSOYAD
             // 
             this.lblADSOYAD.AutoSize = true;
             this.lblADSOYAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblADSOYAD.ForeColor = System.Drawing.Color.Black;
-            this.lblADSOYAD.Location = new System.Drawing.Point(119, 127);
+            this.lblADSOYAD.ForeColor = System.Drawing.Color.Blue;
+            this.lblADSOYAD.Location = new System.Drawing.Point(122, 79);
             this.lblADSOYAD.Name = "lblADSOYAD";
-            this.lblADSOYAD.Size = new System.Drawing.Size(131, 22);
+            this.lblADSOYAD.Size = new System.Drawing.Size(96, 22);
             this.lblADSOYAD.TabIndex = 2;
-            this.lblADSOYAD.Text = "00000000000";
+            this.lblADSOYAD.Text = "Ad Soyad";
             // 
             // label2
             // 
@@ -120,7 +120,7 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.richTextBox1);
             this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.comboBoxBrans);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -169,13 +169,13 @@
             this.comboBox2.Size = new System.Drawing.Size(239, 33);
             this.comboBox2.TabIndex = 4;
             // 
-            // comboBox1
+            // comboBoxBrans
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(239, 33);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxBrans.FormattingEnabled = true;
+            this.comboBoxBrans.Location = new System.Drawing.Point(100, 38);
+            this.comboBoxBrans.Name = "comboBoxBrans";
+            this.comboBoxBrans.Size = new System.Drawing.Size(239, 33);
+            this.comboBoxBrans.TabIndex = 3;
             // 
             // label7
             // 
@@ -214,7 +214,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(378, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(715, 322);
+            this.groupBox3.Size = new System.Drawing.Size(806, 322);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "RANDEVU GEÇMİŞİ";
@@ -227,7 +227,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(709, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 293);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox4
@@ -237,7 +237,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Red;
             this.groupBox4.Location = new System.Drawing.Point(378, 326);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(715, 315);
+            this.groupBox4.Size = new System.Drawing.Size(806, 315);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "AKTİF RANDEVULAR";
@@ -250,23 +250,26 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(709, 286);
+            this.dataGridView2.Size = new System.Drawing.Size(800, 286);
             this.dataGridView2.TabIndex = 0;
             // 
             // HastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1094, 648);
+            this.ClientSize = new System.Drawing.Size(1186, 646);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "HastaDetay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HastaDetay";
+            this.Load += new System.EventHandler(this.HastaDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -290,7 +293,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxBrans;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
