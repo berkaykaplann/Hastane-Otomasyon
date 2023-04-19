@@ -50,5 +50,28 @@ namespace WindowsFormsApp1
             }
             bgl.baglanti().Close();
         }
+
+        private void comboBoxBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxDoktor.Items.Clear();
+
+            SqlCommand komut3 = new SqlCommand("Select DoktorAd,DoktorSoyad From Table_Doktor where DoktorBrans=@p1", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@p1", comboBoxBrans.Text);
+            SqlDataReader dr3 = komut3.ExecuteReader();
+
+            while(dr3.Read())
+            {
+                comboBoxDoktor.Items.Add(dr3[0] + " " + dr3[1]);
+            }
+            bgl.baglanti().Close();
+        }
+
+        private void comboBoxDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Table_Randevular where RandevuBrans='"+comboBoxBrans.Text+"'",bgl.baglanti());
+            da.Fill(dt);
+            dataGridView2.DataSource=dt;    
+        }
     }
 }

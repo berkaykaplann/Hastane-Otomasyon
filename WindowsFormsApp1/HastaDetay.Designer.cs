@@ -38,7 +38,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDoktor = new System.Windows.Forms.ComboBox();
             this.comboBoxBrans = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +47,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -116,10 +118,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.comboBoxDoktor);
             this.groupBox2.Controls.Add(this.comboBoxBrans);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
@@ -161,21 +165,23 @@
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
-            // comboBox2
+            // comboBoxDoktor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(100, 106);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(239, 33);
-            this.comboBox2.TabIndex = 4;
+            this.comboBoxDoktor.FormattingEnabled = true;
+            this.comboBoxDoktor.Location = new System.Drawing.Point(100, 126);
+            this.comboBoxDoktor.Name = "comboBoxDoktor";
+            this.comboBoxDoktor.Size = new System.Drawing.Size(239, 33);
+            this.comboBoxDoktor.TabIndex = 4;
+            this.comboBoxDoktor.SelectedIndexChanged += new System.EventHandler(this.comboBoxDoktor_SelectedIndexChanged);
             // 
             // comboBoxBrans
             // 
             this.comboBoxBrans.FormattingEnabled = true;
-            this.comboBoxBrans.Location = new System.Drawing.Point(100, 38);
+            this.comboBoxBrans.Location = new System.Drawing.Point(100, 79);
             this.comboBoxBrans.Name = "comboBoxBrans";
             this.comboBoxBrans.Size = new System.Drawing.Size(239, 33);
             this.comboBoxBrans.TabIndex = 3;
+            this.comboBoxBrans.SelectedIndexChanged += new System.EventHandler(this.comboBoxBrans_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -191,7 +197,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(12, 109);
+            this.label6.Location = new System.Drawing.Point(12, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 25);
             this.label6.TabIndex = 1;
@@ -201,7 +207,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(19, 38);
+            this.label5.Location = new System.Drawing.Point(19, 79);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 25);
             this.label5.TabIndex = 0;
@@ -253,6 +259,23 @@
             this.dataGridView2.Size = new System.Drawing.Size(800, 286);
             this.dataGridView2.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(54, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "ID:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(100, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(239, 30);
+            this.textBox1.TabIndex = 9;
+            // 
             // HastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,7 +315,7 @@
         private System.Windows.Forms.Label lblADSOYAD;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxDoktor;
         private System.Windows.Forms.ComboBox comboBoxBrans;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -302,5 +325,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
