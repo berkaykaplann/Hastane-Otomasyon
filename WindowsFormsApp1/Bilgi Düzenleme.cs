@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        public string TCno;
+        private void Bilgi_Düzenleme_Load(object sender, EventArgs e)
+        {
+            maskedTextBoxTC.Text = TCno;
+        }
     }
 }

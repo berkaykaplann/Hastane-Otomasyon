@@ -73,5 +73,13 @@ namespace WindowsFormsApp1
             da.Fill(dt);
             dataGridView2.DataSource=dt;    
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Bilgi_Düzenleme fr = new Bilgi_Düzenleme();
+            fr.TCno=lblTC.Text;
+            fr.Show();
+
+        }
     }
 }
