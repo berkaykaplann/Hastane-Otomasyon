@@ -54,6 +54,7 @@
             this.button1.TabIndex = 25;
             this.button1.Text = "GÜNCELLE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxSifre
             // 
@@ -194,7 +195,7 @@
             this.MaximizeBox = false;
             this.Name = "Bilgi_Düzenleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hasta Bilgi Düzenleme";
+            this.Text = "Hasta Bilgi Güncelleme";
             this.Load += new System.EventHandler(this.Bilgi_Düzenleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

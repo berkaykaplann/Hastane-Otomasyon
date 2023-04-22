@@ -37,5 +37,22 @@ namespace WindowsFormsApp1
             }
             bgl.baglanti().Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update Table_Hastalar set HastaAd=@p1,HastaSoyad=@p2,HastaTelefon=@p3,HastaSifre=@p4,HastaCinsiyet=@p5 where HastaTC=@p6", bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", textBoxAd.Text);
+            komut2.Parameters.AddWithValue("@p2", textBoxSoyad.Text);
+            komut2.Parameters.AddWithValue("@p3", maskedTextBoxTel.Text);
+            komut2.Parameters.AddWithValue("@p4", textBoxSifre.Text);
+            komut2.Parameters.AddWithValue("@p5", comboBoxCinsiyet.Text);
+            komut2.Parameters.AddWithValue("@p6", maskedTextBoxTC.Text);
+
+            komut2.ExecuteNonQuery(); // insert delete ve update de kullanılan komut
+            bgl.baglanti().Close();
+
+            MessageBox.Show("Bilgileriniz Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
     }
 }
