@@ -163,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Doktor_Bilgi_Düzenleme";
             this.Text = "Doktor_Bilgi_Düzenleme";
+            this.Load += new System.EventHandler(this.Doktor_Bilgi_Düzenleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -157,12 +157,12 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(136, 388);
+            this.linkLabel1.Location = new System.Drawing.Point(95, 389);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(167, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(189, 25);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Bilgileri Düzenle";
+            this.linkLabel1.Text = "Bilgilerimi Düzenle";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1

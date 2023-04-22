@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Doktor_Bilgi_Düzenleme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
