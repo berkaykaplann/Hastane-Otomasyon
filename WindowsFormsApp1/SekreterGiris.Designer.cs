@@ -42,9 +42,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(302, 289);
+            this.button1.Location = new System.Drawing.Point(272, 279);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 43);
+            this.button1.Size = new System.Drawing.Size(118, 45);
             this.button1.TabIndex = 19;
             this.button1.Text = "GİRİŞ YAP";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             this.maskedTextBoxTC.Mask = "00000000000";
             this.maskedTextBoxTC.Name = "maskedTextBoxTC";
             this.maskedTextBoxTC.Size = new System.Drawing.Size(229, 30);
-            this.maskedTextBoxTC.TabIndex = 18;
+            this.maskedTextBoxTC.TabIndex = 1;
             // 
             // textBoxSifre
             // 
@@ -65,7 +65,7 @@
             this.textBoxSifre.Location = new System.Drawing.Point(293, 207);
             this.textBoxSifre.Name = "textBoxSifre";
             this.textBoxSifre.Size = new System.Drawing.Size(229, 30);
-            this.textBoxSifre.TabIndex = 17;
+            this.textBoxSifre.TabIndex = 2;
             this.textBoxSifre.UseSystemPasswordChar = true;
             // 
             // label3

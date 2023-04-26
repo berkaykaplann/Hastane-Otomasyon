@@ -122,22 +122,22 @@
             this.lblTC.AutoSize = true;
             this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTC.ForeColor = System.Drawing.Color.Black;
-            this.lblTC.Location = new System.Drawing.Point(122, 79);
+            this.lblTC.Location = new System.Drawing.Point(122, 127);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(60, 22);
+            this.lblTC.Size = new System.Drawing.Size(120, 22);
             this.lblTC.TabIndex = 3;
-            this.lblTC.Text = "NULL";
+            this.lblTC.Text = "0000000000";
             // 
             // lblADSOYAD
             // 
             this.lblADSOYAD.AutoSize = true;
             this.lblADSOYAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblADSOYAD.ForeColor = System.Drawing.Color.Black;
-            this.lblADSOYAD.Location = new System.Drawing.Point(119, 127);
+            this.lblADSOYAD.Location = new System.Drawing.Point(122, 77);
             this.lblADSOYAD.Name = "lblADSOYAD";
-            this.lblADSOYAD.Size = new System.Drawing.Size(131, 22);
+            this.lblADSOYAD.Size = new System.Drawing.Size(42, 22);
             this.lblADSOYAD.TabIndex = 2;
-            this.lblADSOYAD.Text = "00000000000";
+            this.lblADSOYAD.Text = "null";
             // 
             // label2
             // 
@@ -192,7 +192,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(195, 418);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 45);
+            this.button3.Size = new System.Drawing.Size(150, 45);
             this.button3.TabIndex = 14;
             this.button3.Text = "GÜNCELLE";
             this.button3.UseVisualStyleBackColor = true;
@@ -339,42 +339,44 @@
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(738, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(434, 305);
+            this.groupBox4.Size = new System.Drawing.Size(434, 298);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "BRANŞLAR";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(428, 276);
+            this.dataGridView1.Size = new System.Drawing.Size(428, 269);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dataGridView2);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox5.Location = new System.Drawing.Point(738, 323);
+            this.groupBox5.Location = new System.Drawing.Point(738, 314);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(434, 341);
+            this.groupBox5.Size = new System.Drawing.Size(434, 323);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "DOKTORLAR";
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(428, 312);
+            this.dataGridView2.Size = new System.Drawing.Size(428, 294);
             this.dataGridView2.TabIndex = 0;
             // 
             // groupBox6
@@ -385,14 +387,14 @@
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox6.Location = new System.Drawing.Point(12, 543);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(720, 118);
+            this.groupBox6.Size = new System.Drawing.Size(720, 94);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "HIZLI ERİŞİM";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(472, 36);
+            this.button6.Location = new System.Drawing.Point(487, 23);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(179, 58);
             this.button6.TabIndex = 2;
@@ -401,7 +403,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(252, 36);
+            this.button5.Location = new System.Drawing.Point(267, 23);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(202, 58);
             this.button5.TabIndex = 1;
@@ -410,7 +412,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(45, 36);
+            this.button4.Location = new System.Drawing.Point(60, 23);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 58);
             this.button4.TabIndex = 0;
@@ -423,7 +425,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1175, 667);
+            this.ClientSize = new System.Drawing.Size(1175, 642);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -435,6 +437,7 @@
             this.Name = "SekreterDetay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterDetay";
+            this.Load += new System.EventHandler(this.SekreterDetay_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

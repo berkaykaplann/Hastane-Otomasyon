@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
             if(dr.Read())
             {
                 SekreterDetay frs = new SekreterDetay();
+                frs.TCnumara = maskedTextBoxTC.Text;
                 frs.Show();
                 this.Hide();
             }
