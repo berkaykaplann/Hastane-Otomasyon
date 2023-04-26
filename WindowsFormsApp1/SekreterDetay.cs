@@ -47,8 +47,42 @@ namespace WindowsFormsApp1
             da2.Fill(dt2);
             dataGridView2.DataSource= dt2;
 
+            // bransları aktarma cmbbox
+            SqlCommand komut2 = new SqlCommand("Select BransAd from Table_Brans", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while(dr2.Read())
+            {
+                comboBoxBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutkaydet = new SqlCommand("insert into Table_Randevular (RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
+            komutkaydet.Parameters.AddWithValue("@p1", maskedTextBoxTarih.Text);
+            komutkaydet.Parameters.AddWithValue("@p2",maskedTextBoxSaat.Text);
+            komutkaydet.Parameters.AddWithValue("@p3", comboBoxBrans.Text);
+            komutkaydet.Parameters.AddWithValue("@p4", comboBoxDoktor.Text);
+            komutkaydet.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Oluşturuldu.");
+        }
+
+        private void comboBoxBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxDoktor.Items.Clear();
+
+            SqlCommand komut = new SqlCommand("Select DoktorAd,DoktorSoyad from Table_Doktor where DoktorBrans=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", comboBoxBrans.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while(dr.Read())
+            {
+                comboBoxDoktor.Items.Add(dr[0] + " " + dr[1]);
+            }
+            bgl.baglanti().Close();
         }
     }
 }
