@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekreterDetay));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblTC = new System.Windows.Forms.Label();
             this.lblADSOYAD = new System.Windows.Forms.Label();
@@ -74,7 +74,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.richTextBoxDuyuru);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(12, 202);
@@ -93,14 +93,15 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "OLUŞTUR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox1
+            // richTextBoxDuyuru
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 42);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(335, 183);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.richTextBoxDuyuru.Location = new System.Drawing.Point(6, 42);
+            this.richTextBoxDuyuru.Name = "richTextBoxDuyuru";
+            this.richTextBoxDuyuru.Size = new System.Drawing.Size(335, 183);
+            this.richTextBoxDuyuru.TabIndex = 5;
+            this.richTextBoxDuyuru.Text = "";
             // 
             // groupBox1
             // 
@@ -420,6 +421,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Doktor Paneli";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // SekreterDetay
             // 
@@ -458,7 +460,7 @@
 
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxDuyuru;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblTC;
         private System.Windows.Forms.Label lblADSOYAD;

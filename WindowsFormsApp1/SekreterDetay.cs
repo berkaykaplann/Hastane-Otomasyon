@@ -84,5 +84,21 @@ namespace WindowsFormsApp1
             }
             bgl.baglanti().Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut =new SqlCommand("insert into Table_Duyurular (duyuru) values (@p1)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", richTextBoxDuyuru.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru Oluşturuldu.");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Doktor_Paneli dfr = new Doktor_Paneli();
+            dfr.Show();
+
+        }
     }
 }

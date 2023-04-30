@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doktor_Paneli));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxAd = new System.Windows.Forms.TextBox();
+            this.textBoxSoyad = new System.Windows.Forms.TextBox();
+            this.comboBoxBrans = new System.Windows.Forms.ComboBox();
+            this.maskedTextBoxTC = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxSifre = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -95,58 +96,60 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "ŞİFRE:";
             // 
-            // textBox1
+            // textBoxAd
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(130, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 28);
-            this.textBox1.TabIndex = 5;
+            this.textBoxAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxAd.Location = new System.Drawing.Point(130, 37);
+            this.textBoxAd.Name = "textBoxAd";
+            this.textBoxAd.Size = new System.Drawing.Size(165, 28);
+            this.textBoxAd.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxSoyad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(130, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 28);
-            this.textBox2.TabIndex = 6;
+            this.textBoxSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSoyad.Location = new System.Drawing.Point(130, 102);
+            this.textBoxSoyad.Name = "textBoxSoyad";
+            this.textBoxSoyad.Size = new System.Drawing.Size(165, 28);
+            this.textBoxSoyad.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxBrans
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(130, 157);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 30);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxBrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBoxBrans.FormattingEnabled = true;
+            this.comboBoxBrans.Location = new System.Drawing.Point(130, 157);
+            this.comboBoxBrans.Name = "comboBoxBrans";
+            this.comboBoxBrans.Size = new System.Drawing.Size(165, 30);
+            this.comboBoxBrans.TabIndex = 3;
             // 
-            // maskedTextBox1
+            // maskedTextBoxTC
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(130, 219);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(165, 28);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxTC.Location = new System.Drawing.Point(130, 219);
+            this.maskedTextBoxTC.Mask = "00000000000";
+            this.maskedTextBoxTC.Name = "maskedTextBoxTC";
+            this.maskedTextBoxTC.Size = new System.Drawing.Size(165, 28);
+            this.maskedTextBoxTC.TabIndex = 4;
+            this.maskedTextBoxTC.ValidatingType = typeof(int);
             // 
-            // textBox3
+            // textBoxSifre
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(130, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 28);
-            this.textBox3.TabIndex = 9;
+            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSifre.Location = new System.Drawing.Point(130, 275);
+            this.textBoxSifre.Name = "textBoxSifre";
+            this.textBoxSifre.Size = new System.Drawing.Size(165, 28);
+            this.textBoxSifre.TabIndex = 5;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(322, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(322, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(475, 441);
+            this.dataGridView1.Size = new System.Drawing.Size(792, 445);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // button1
             // 
@@ -157,13 +160,14 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(140, 390);
+            this.button2.Location = new System.Drawing.Point(130, 390);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 30);
+            this.button2.Size = new System.Drawing.Size(110, 30);
             this.button2.TabIndex = 12;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
@@ -182,22 +186,27 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1117, 448);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSifre);
+            this.Controls.Add(this.maskedTextBoxTC);
+            this.Controls.Add(this.comboBoxBrans);
+            this.Controls.Add(this.textBoxSoyad);
+            this.Controls.Add(this.textBoxAd);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Doktor_Paneli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor_Paneli";
             this.Load += new System.EventHandler(this.Doktor_Paneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -213,11 +222,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxAd;
+        private System.Windows.Forms.TextBox textBoxSoyad;
+        private System.Windows.Forms.ComboBox comboBoxBrans;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTC;
+        private System.Windows.Forms.TextBox textBoxSifre;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
