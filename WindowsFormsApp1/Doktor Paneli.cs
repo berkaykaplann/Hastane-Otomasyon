@@ -25,6 +25,14 @@ namespace WindowsFormsApp1
             SqlDataAdapter da1 = new SqlDataAdapter("Select * from Table_Doktor", bgl.baglanti());
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
+
+            SqlCommand komut2 = new SqlCommand("Select BransAd from Table_Brans", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                comboBoxBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,6 +63,30 @@ namespace WindowsFormsApp1
             comboBoxBrans.Text=dataGridView1.Rows[secilen].Cells[3].Value.ToString();
             maskedTextBoxTC.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
             textBoxSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete From Table_Doktor where DoktorTC=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", maskedTextBoxTC.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Kayıt Silindi.","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut =new SqlCommand("Update Table_Doktor set DoktorAd=@p1,DoktorSoyad=@p2,DoktorBrans=@p3,DoktorSifre=@p5 where DoktorTC=@p4",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", textBoxAd.Text);
+            komut.Parameters.AddWithValue("@p2", textBoxSoyad.Text);
+            komut.Parameters.AddWithValue("@p3", comboBoxBrans.Text);
+            komut.Parameters.AddWithValue("@p4", maskedTextBoxTC.Text);
+            komut.Parameters.AddWithValue("@p5", textBoxSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
         }
     }
 }
