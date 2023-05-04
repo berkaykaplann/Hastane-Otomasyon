@@ -100,5 +100,20 @@ namespace WindowsFormsApp1
             dfr.Show();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Brans_Paneli fr = new Brans_Paneli();
+            fr.Show();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Randevu_Listesi fr = new Randevu_Listesi();
+            fr.Show();
+           
+            
+        }
     }
 }

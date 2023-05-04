@@ -403,6 +403,7 @@
             this.button6.TabIndex = 2;
             this.button6.Text = "Randevu Liste";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -412,6 +413,7 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "Branş Paneli";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 

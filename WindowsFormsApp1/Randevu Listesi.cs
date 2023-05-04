@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +16,14 @@ namespace WindowsFormsApp1
         public Randevu_Listesi()
         {
             InitializeComponent();
+        }
+        Sqlbaglanti bgl = new Sqlbaglanti();
+        private void Randevu_Listesi_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Table_Randevular", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;  
         }
     }
 }
