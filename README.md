@@ -6,7 +6,7 @@
 
 Hastanelerde hastaların, doktorların ve diğer çalışanların işlerini kolaylaştırmak ve hastalara daha iyi ve hızlı bir şekilde hizmet sunulmasını sağlamak istiyorum. 
 
---AMAÇ--
+--AMAÇ ÖZELLİKLER vs.--
  
 Hasta , sekreter ve doktor olmak üzere üç giriş bulunmakta.
 1-Hasta sisteme kayıt olabilir , giriş yapabilir , randevu alabilir ,bilgilerini düzenleyebilir.
