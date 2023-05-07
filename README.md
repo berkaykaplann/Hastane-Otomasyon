@@ -4,16 +4,18 @@
 
 --MOTİVASYON--
 
-Hastanelerde hastaların, doktorların ve diğer çalışanların işlerini kolaylaştırmak ve hastalara daha iyi ve hızlı bir şekilde hizmet sunulmasını sağlıyorum. 
+Hastanelerde hastaların, doktorların ve diğer çalışanların işlerini kolaylaştırmak ve hastalara daha iyi ve hızlı bir şekilde hizmet sunulmasını sağlamak istiyorum. 
 
 --AMAÇ--
-
+ 
 Hasta , sekreter ve doktor olmak üzere üç giriş bulunmakta.
 1-Hasta sisteme kayıt olabilir , giriş yapabilir , randevu alabilir ,bilgilerini düzenleyebilir.
 2-Sekreter randevu görüntüleyebilir ,randevu düzenleyebilir , sisteme doktor ekleyip silebilir , duyuru oluşturabilir vs.
 3-DOktor sisteme giriş yapabilir kendisine ait hastaların randevularını görüntüleyebilir.
 
+--VERİTABANI TABLOLARI--
 
+Projede MSSQL veritabanı sistemi kullanılmakta olup doktor , hasta ,sekreter , randevu ,duyuru ve brans olmak üzere 6 adet tablo kullandım.
 
 
 
