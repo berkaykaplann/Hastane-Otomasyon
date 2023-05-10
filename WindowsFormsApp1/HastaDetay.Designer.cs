@@ -35,11 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxSikayet = new System.Windows.Forms.RichTextBox();
             this.comboBoxDoktor = new System.Windows.Forms.ComboBox();
             this.comboBoxBrans = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -118,11 +118,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBoxid);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.richTextBoxSikayet);
             this.groupBox2.Controls.Add(this.comboBoxDoktor);
             this.groupBox2.Controls.Add(this.comboBoxBrans);
             this.groupBox2.Controls.Add(this.label7);
@@ -137,12 +137,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RANDEVU PANELİ";
             // 
-            // textBox1
+            // textBoxid
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 30);
-            this.textBox1.TabIndex = 9;
+            this.textBoxid.Enabled = false;
+            this.textBoxid.Location = new System.Drawing.Point(100, 39);
+            this.textBoxid.Name = "textBoxid";
+            this.textBoxid.Size = new System.Drawing.Size(239, 30);
+            this.textBoxid.TabIndex = 9;
             // 
             // label3
             // 
@@ -174,14 +175,15 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Randevu Al";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox1
+            // richTextBoxSikayet
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(100, 176);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(239, 145);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.richTextBoxSikayet.Location = new System.Drawing.Point(100, 176);
+            this.richTextBoxSikayet.Name = "richTextBoxSikayet";
+            this.richTextBoxSikayet.Size = new System.Drawing.Size(239, 145);
+            this.richTextBoxSikayet.TabIndex = 5;
+            this.richTextBoxSikayet.Text = "";
             // 
             // comboBoxDoktor
             // 
@@ -238,7 +240,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(378, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(806, 322);
+            this.groupBox3.Size = new System.Drawing.Size(862, 322);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "RANDEVU GEÇMİŞİ";
@@ -251,7 +253,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(856, 293);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox4
@@ -261,7 +263,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Red;
             this.groupBox4.Location = new System.Drawing.Point(378, 326);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(806, 315);
+            this.groupBox4.Size = new System.Drawing.Size(862, 315);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "AKTİF RANDEVULAR";
@@ -274,8 +276,9 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(800, 286);
+            this.dataGridView2.Size = new System.Drawing.Size(856, 286);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // HastaDetay
             // 
@@ -283,7 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1186, 646);
+            this.ClientSize = new System.Drawing.Size(1243, 646);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -315,7 +318,7 @@
         private System.Windows.Forms.Label lblTC;
         private System.Windows.Forms.Label lblADSOYAD;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxSikayet;
         private System.Windows.Forms.ComboBox comboBoxDoktor;
         private System.Windows.Forms.ComboBox comboBoxBrans;
         private System.Windows.Forms.Label label7;
@@ -326,7 +329,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxid;
         private System.Windows.Forms.Label label3;
     }
 }
