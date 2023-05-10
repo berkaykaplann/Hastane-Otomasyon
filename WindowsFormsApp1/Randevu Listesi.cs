@@ -25,5 +25,10 @@ namespace WindowsFormsApp1
             da.Fill(dt);
             dataGridView1.DataSource = dt;  
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
