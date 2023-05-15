@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +16,27 @@ namespace WindowsFormsApp1
         public Doktor_Giris()
         {
             InitializeComponent();
+        }
+        Sqlbaglanti bgl = new Sqlbaglanti();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Select * from Table_Doktor where DoktorTC=@p1 and DoktorSifre=@p2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", maskedTextBoxTC.Text);
+            komut.Parameters.AddWithValue("@p2", textBoxSifre.Text);
+            SqlDataReader dr=komut.ExecuteReader();
+            if(dr.Read())
+            {
+                Doktor_Detay fr = new Doktor_Detay();
+                fr.TC = maskedTextBoxTC.Text;
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı TC veya Sifre!");
+
+            }
+            bgl.baglanti().Close();
         }
     }
 }

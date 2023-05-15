@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doktor_Detay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.lblTC = new System.Windows.Forms.Label();
-            this.lblADSOYAD = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,8 +49,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblAdSoyad);
             this.groupBox1.Controls.Add(this.lblTC);
-            this.groupBox1.Controls.Add(this.lblADSOYAD);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -61,27 +62,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DOKTOR BİLGİLERİ";
             // 
+            // lblAdSoyad
+            // 
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAdSoyad.ForeColor = System.Drawing.Color.Black;
+            this.lblAdSoyad.Location = new System.Drawing.Point(122, 79);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(60, 22);
+            this.lblAdSoyad.TabIndex = 3;
+            this.lblAdSoyad.Text = "NULL";
+            // 
             // lblTC
             // 
             this.lblTC.AutoSize = true;
             this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTC.ForeColor = System.Drawing.Color.Black;
-            this.lblTC.Location = new System.Drawing.Point(122, 79);
+            this.lblTC.Location = new System.Drawing.Point(119, 127);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(60, 22);
-            this.lblTC.TabIndex = 3;
-            this.lblTC.Text = "NULL";
-            // 
-            // lblADSOYAD
-            // 
-            this.lblADSOYAD.AutoSize = true;
-            this.lblADSOYAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblADSOYAD.ForeColor = System.Drawing.Color.Black;
-            this.lblADSOYAD.Location = new System.Drawing.Point(119, 127);
-            this.lblADSOYAD.Name = "lblADSOYAD";
-            this.lblADSOYAD.Size = new System.Drawing.Size(131, 22);
-            this.lblADSOYAD.TabIndex = 2;
-            this.lblADSOYAD.Text = "00000000000";
+            this.lblTC.Size = new System.Drawing.Size(131, 22);
+            this.lblTC.TabIndex = 2;
+            this.lblTC.Text = "00000000000";
             // 
             // label2
             // 
@@ -181,6 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1008, 607);
             this.Controls.Add(this.button3);
@@ -189,8 +191,12 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Doktor_Detay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor_Detay";
+            this.Load += new System.EventHandler(this.Doktor_Detay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -203,8 +209,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblAdSoyad;
         private System.Windows.Forms.Label lblTC;
-        private System.Windows.Forms.Label lblADSOYAD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
