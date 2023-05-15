@@ -57,7 +57,7 @@
             this.maskedTextBoxTC.Mask = "00000000000";
             this.maskedTextBoxTC.Name = "maskedTextBoxTC";
             this.maskedTextBoxTC.Size = new System.Drawing.Size(229, 30);
-            this.maskedTextBoxTC.TabIndex = 11;
+            this.maskedTextBoxTC.TabIndex = 1;
             // 
             // textBoxSifre
             // 
@@ -65,7 +65,7 @@
             this.textBoxSifre.Location = new System.Drawing.Point(306, 196);
             this.textBoxSifre.Name = "textBoxSifre";
             this.textBoxSifre.Size = new System.Drawing.Size(229, 30);
-            this.textBoxSifre.TabIndex = 10;
+            this.textBoxSifre.TabIndex = 2;
             this.textBoxSifre.UseSystemPasswordChar = true;
             // 
             // label3

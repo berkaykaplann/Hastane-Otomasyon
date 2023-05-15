@@ -32,6 +32,15 @@ namespace WindowsFormsApp1
 
             }
             bgl.baglanti().Close();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da=new SqlDataAdapter("select * from Table_Randevular where RandevuDoktor='"+lblAdSoyad.Text+"'",bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+
+
         }
     }
 }
