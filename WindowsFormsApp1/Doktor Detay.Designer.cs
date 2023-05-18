@@ -157,6 +157,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Bilgilerimi Düzenle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -196,6 +197,7 @@
             this.Name = "Doktor_Detay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor_Detay";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doktor_Detay_FormClosing);
             this.Load += new System.EventHandler(this.Doktor_Detay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

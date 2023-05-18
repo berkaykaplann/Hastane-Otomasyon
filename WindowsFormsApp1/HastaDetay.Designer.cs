@@ -49,6 +49,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -118,6 +119,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBoxid);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.linkLabel1);
@@ -158,7 +160,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(95, 389);
+            this.linkLabel1.Location = new System.Drawing.Point(95, 399);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(189, 25);
             this.linkLabel1.TabIndex = 7;
@@ -168,20 +170,21 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.SeaGreen;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(100, 327);
+            this.button1.Location = new System.Drawing.Point(100, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 47);
+            this.button1.Size = new System.Drawing.Size(239, 41);
             this.button1.TabIndex = 6;
             this.button1.Text = "Randevu Al";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBoxSikayet
             // 
             this.richTextBoxSikayet.Location = new System.Drawing.Point(100, 176);
             this.richTextBoxSikayet.Name = "richTextBoxSikayet";
-            this.richTextBoxSikayet.Size = new System.Drawing.Size(239, 145);
+            this.richTextBoxSikayet.Size = new System.Drawing.Size(239, 132);
             this.richTextBoxSikayet.TabIndex = 5;
             this.richTextBoxSikayet.Text = "";
             // 
@@ -280,6 +283,18 @@
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Brown;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(100, 355);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(239, 41);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Ana Sayfaya Dön";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // HastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,6 +311,7 @@
             this.Name = "HastaDetay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HastaDetay";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HastaDetay_FormClosing);
             this.Load += new System.EventHandler(this.HastaDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -331,5 +347,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBoxid;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }

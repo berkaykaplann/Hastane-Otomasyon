@@ -38,5 +38,17 @@ namespace WindowsFormsApp1
             }
             bgl.baglanti().Close();
         }
+
+        private void Doktor_Giris_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormGiris fr = new FormGiris();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

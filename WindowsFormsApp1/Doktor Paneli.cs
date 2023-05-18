@@ -88,5 +88,10 @@ namespace WindowsFormsApp1
 
 
         }
+
+        private void Doktor_Paneli_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit(); 
+        }
     }
 }

@@ -36,5 +36,10 @@ namespace WindowsFormsApp1
             MessageBox.Show("Kaydınız Yapılmıştır. ŞİFRENİZ:" + textBoxSifre.Text,"Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
+
+        private void FormHastaKayıt_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

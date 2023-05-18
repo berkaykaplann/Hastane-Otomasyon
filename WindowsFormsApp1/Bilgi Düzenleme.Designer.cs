@@ -196,6 +196,7 @@
             this.Name = "Bilgi_Düzenleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Bilgi Güncelleme";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Bilgi_Düzenleme_FormClosing);
             this.Load += new System.EventHandler(this.Bilgi_Düzenleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

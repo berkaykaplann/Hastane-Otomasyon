@@ -54,5 +54,10 @@ namespace WindowsFormsApp1
             MessageBox.Show("Bilgileriniz Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
+
+        private void Bilgi_Düzenleme_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

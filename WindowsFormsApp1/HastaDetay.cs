@@ -98,5 +98,17 @@ namespace WindowsFormsApp1
             bgl.baglanti().Close();
             MessageBox.Show("Randevunuz Alınmıştır.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void HastaDetay_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormGiris fr = new FormGiris();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

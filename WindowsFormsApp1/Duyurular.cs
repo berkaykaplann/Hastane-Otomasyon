@@ -25,5 +25,10 @@ namespace WindowsFormsApp1
             da.Fill(dt);
             dataGridView1.DataSource=dt;
         }
+
+        private void Duyurular_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

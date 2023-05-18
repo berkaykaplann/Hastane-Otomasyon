@@ -210,6 +210,7 @@
             this.Name = "Doktor_Paneli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor_Paneli";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doktor_Paneli_FormClosing);
             this.Load += new System.EventHandler(this.Doktor_Paneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

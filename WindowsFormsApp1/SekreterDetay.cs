@@ -120,8 +120,20 @@ namespace WindowsFormsApp1
         {
             Duyurular fr = new Duyurular();
             fr.Show();
-            this.Hide();
+           // this.Hide();
 
+        }
+
+        private void SekreterDetay_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FormGiris fr = new FormGiris();
+            fr.Show();
+            this.Hide();
         }
     }
 }

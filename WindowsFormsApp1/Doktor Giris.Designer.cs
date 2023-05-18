@@ -36,35 +36,37 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(306, 287);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 43);
+            this.button1.Size = new System.Drawing.Size(229, 41);
             this.button1.TabIndex = 13;
             this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // maskedTextBoxTC
             // 
-            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBoxTC.Location = new System.Drawing.Point(306, 148);
             this.maskedTextBoxTC.Mask = "00000000000";
             this.maskedTextBoxTC.Name = "maskedTextBoxTC";
-            this.maskedTextBoxTC.Size = new System.Drawing.Size(229, 30);
+            this.maskedTextBoxTC.Size = new System.Drawing.Size(250, 34);
             this.maskedTextBoxTC.TabIndex = 1;
             // 
             // textBoxSifre
             // 
-            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBoxSifre.Location = new System.Drawing.Point(306, 196);
             this.textBoxSifre.Name = "textBoxSifre";
-            this.textBoxSifre.Size = new System.Drawing.Size(229, 30);
+            this.textBoxSifre.Size = new System.Drawing.Size(250, 34);
             this.textBoxSifre.TabIndex = 2;
             this.textBoxSifre.UseSystemPasswordChar = true;
             // 
@@ -108,6 +110,19 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Brown;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(306, 334);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(229, 41);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Ana Sayfaya Dön";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Doktor_Giris
             // 
             this.AcceptButton = this.button1;
@@ -116,6 +131,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(738, 441);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBoxTC);
@@ -128,6 +144,7 @@
             this.Name = "Doktor_Giris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doktor_Giris";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doktor_Giris_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,5 +160,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

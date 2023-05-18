@@ -66,5 +66,10 @@ namespace WindowsFormsApp1
             MessageBox.Show("Brans Güncellendi.");
 
         }
+
+        private void Brans_Paneli_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

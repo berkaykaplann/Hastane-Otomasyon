@@ -57,10 +57,11 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,13 +87,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(60, 231);
+            this.button1.Location = new System.Drawing.Point(10, 231);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 47);
+            this.button1.Size = new System.Drawing.Size(331, 47);
             this.button1.TabIndex = 6;
             this.button1.Text = "OLUŞTUR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBoxDuyuru
@@ -189,20 +191,21 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.ForestGreen;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(119, 418);
+            this.button2.Location = new System.Drawing.Point(34, 421);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 45);
+            this.button2.Size = new System.Drawing.Size(299, 45);
             this.button2.TabIndex = 13;
             this.button2.Text = "KAYDET";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(119, 373);
+            this.checkBox1.Location = new System.Drawing.Point(119, 351);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(111, 29);
             this.checkBox1.TabIndex = 12;
@@ -211,7 +214,7 @@
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(119, 323);
+            this.maskedTextBox3.Location = new System.Drawing.Point(119, 305);
             this.maskedTextBox3.Mask = "00000000000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(197, 30);
@@ -220,7 +223,7 @@
             // comboBoxDoktor
             // 
             this.comboBoxDoktor.FormattingEnabled = true;
-            this.comboBoxDoktor.Location = new System.Drawing.Point(119, 272);
+            this.comboBoxDoktor.Location = new System.Drawing.Point(119, 254);
             this.comboBoxDoktor.Name = "comboBoxDoktor";
             this.comboBoxDoktor.Size = new System.Drawing.Size(197, 33);
             this.comboBoxDoktor.TabIndex = 10;
@@ -228,7 +231,7 @@
             // comboBoxBrans
             // 
             this.comboBoxBrans.FormattingEnabled = true;
-            this.comboBoxBrans.Location = new System.Drawing.Point(119, 217);
+            this.comboBoxBrans.Location = new System.Drawing.Point(119, 199);
             this.comboBoxBrans.Name = "comboBoxBrans";
             this.comboBoxBrans.Size = new System.Drawing.Size(197, 33);
             this.comboBoxBrans.TabIndex = 9;
@@ -236,7 +239,7 @@
             // 
             // maskedTextBoxSaat
             // 
-            this.maskedTextBoxSaat.Location = new System.Drawing.Point(119, 172);
+            this.maskedTextBoxSaat.Location = new System.Drawing.Point(119, 154);
             this.maskedTextBoxSaat.Mask = "00:00";
             this.maskedTextBoxSaat.Name = "maskedTextBoxSaat";
             this.maskedTextBoxSaat.Size = new System.Drawing.Size(197, 30);
@@ -245,7 +248,7 @@
             // 
             // maskedTextBoxTarih
             // 
-            this.maskedTextBoxTarih.Location = new System.Drawing.Point(119, 127);
+            this.maskedTextBoxTarih.Location = new System.Drawing.Point(119, 109);
             this.maskedTextBoxTarih.Mask = "00/00/0000";
             this.maskedTextBoxTarih.Name = "maskedTextBoxTarih";
             this.maskedTextBoxTarih.Size = new System.Drawing.Size(197, 30);
@@ -254,7 +257,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 86);
+            this.textBox1.Location = new System.Drawing.Point(119, 68);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 30);
             this.textBox1.TabIndex = 6;
@@ -264,7 +267,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(13, 276);
+            this.label8.Location = new System.Drawing.Point(13, 258);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(100, 22);
             this.label8.TabIndex = 5;
@@ -275,7 +278,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(30, 221);
+            this.label7.Location = new System.Drawing.Point(30, 203);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 22);
             this.label7.TabIndex = 4;
@@ -286,7 +289,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(38, 132);
+            this.label3.Location = new System.Drawing.Point(38, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 22);
             this.label3.TabIndex = 3;
@@ -297,7 +300,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(45, 175);
+            this.label4.Location = new System.Drawing.Point(45, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 22);
             this.label4.TabIndex = 2;
@@ -308,7 +311,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(79, 93);
+            this.label5.Location = new System.Drawing.Point(79, 75);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 20);
             this.label5.TabIndex = 1;
@@ -319,7 +322,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(39, 327);
+            this.label6.Location = new System.Drawing.Point(39, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 20);
             this.label6.TabIndex = 0;
@@ -373,6 +376,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button7);
             this.groupBox6.Controls.Add(this.button3);
             this.groupBox6.Controls.Add(this.button6);
             this.groupBox6.Controls.Add(this.button5);
@@ -385,45 +389,62 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "HIZLI ERİŞİM";
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(377, 20);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(251, 58);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Randevu Liste";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(84, 84);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(251, 52);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Branş Paneli";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(84, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 58);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Doktor Paneli";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(377, 84);
+            this.button3.BackColor = System.Drawing.SystemColors.Info;
+            this.button3.Location = new System.Drawing.Point(284, 83);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 52);
             this.button3.TabIndex = 3;
             this.button3.Text = "Duyurular";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.Info;
+            this.button6.Location = new System.Drawing.Point(284, 20);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(251, 58);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Randevu Liste";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.Info;
+            this.button5.Location = new System.Drawing.Point(27, 83);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(251, 52);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Branş Paneli";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.Info;
+            this.button4.Location = new System.Drawing.Point(27, 20);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(251, 58);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Doktor Paneli";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Brown;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.ForeColor = System.Drawing.Color.Transparent;
+            this.button7.Location = new System.Drawing.Point(549, 20);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(160, 115);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Ana Sayfaya Dön";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // SekreterDetay
             // 
@@ -443,6 +464,7 @@
             this.Name = "SekreterDetay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SekreterDetay";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SekreterDetay_FormClosing);
             this.Load += new System.EventHandler(this.SekreterDetay_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -492,5 +514,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button7;
     }
 }

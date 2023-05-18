@@ -30,5 +30,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Randevu_Listesi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit(); 
+        }
     }
 }

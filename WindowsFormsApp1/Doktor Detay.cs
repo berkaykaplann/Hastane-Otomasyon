@@ -42,5 +42,17 @@ namespace WindowsFormsApp1
 
 
         }
+
+        private void Doktor_Detay_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Doktor_Bilgi_Düzenleme fr =new  Doktor_Bilgi_Düzenleme();
+            fr.TCNO = lblTC.Text;
+            fr.Show();
+        }
     }
 }

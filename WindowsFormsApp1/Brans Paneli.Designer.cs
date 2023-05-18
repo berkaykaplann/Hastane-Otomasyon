@@ -142,6 +142,7 @@
             this.Name = "Brans_Paneli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brans_Paneli";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Brans_Paneli_FormClosing);
             this.Load += new System.EventHandler(this.Brans_Paneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

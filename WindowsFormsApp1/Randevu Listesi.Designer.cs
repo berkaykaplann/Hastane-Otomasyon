@@ -58,6 +58,7 @@
             this.Name = "Randevu_Listesi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Randevu_Listesi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Randevu_Listesi_FormClosing);
             this.Load += new System.EventHandler(this.Randevu_Listesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

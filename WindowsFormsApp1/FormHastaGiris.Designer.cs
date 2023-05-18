@@ -37,6 +37,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,27 +73,27 @@
             // 
             // textBoxSifre
             // 
-            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBoxSifre.Location = new System.Drawing.Point(239, 200);
             this.textBoxSifre.Name = "textBoxSifre";
-            this.textBoxSifre.Size = new System.Drawing.Size(229, 30);
+            this.textBoxSifre.Size = new System.Drawing.Size(273, 38);
             this.textBoxSifre.TabIndex = 2;
             this.textBoxSifre.UseSystemPasswordChar = true;
             // 
             // maskedTextBoxTC
             // 
-            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBoxTC.Location = new System.Drawing.Point(239, 152);
             this.maskedTextBoxTC.Mask = "00000000000";
             this.maskedTextBoxTC.Name = "maskedTextBoxTC";
-            this.maskedTextBoxTC.Size = new System.Drawing.Size(229, 30);
+            this.maskedTextBoxTC.Size = new System.Drawing.Size(273, 38);
             this.maskedTextBoxTC.TabIndex = 1;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.Location = new System.Drawing.Point(501, 182);
+            this.linkLabel1.Location = new System.Drawing.Point(529, 185);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(143, 20);
             this.linkLabel1.TabIndex = 5;
@@ -102,13 +103,14 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(292, 261);
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(239, 276);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 43);
+            this.button1.Size = new System.Drawing.Size(229, 43);
             this.button1.TabIndex = 6;
             this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
@@ -121,6 +123,18 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(239, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(229, 43);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Ana Sayfaya Dön";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormHastaGiris
             // 
             this.AcceptButton = this.button1;
@@ -128,7 +142,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(688, 406);
+            this.ClientSize = new System.Drawing.Size(706, 406);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
@@ -142,6 +157,7 @@
             this.Name = "FormHastaGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Girisi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHastaGiris_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,5 +174,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

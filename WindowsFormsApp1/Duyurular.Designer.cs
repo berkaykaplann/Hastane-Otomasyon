@@ -57,6 +57,7 @@
             this.Name = "Duyurular";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Duyurular";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Duyurular_FormClosing);
             this.Load += new System.EventHandler(this.Duyurular_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

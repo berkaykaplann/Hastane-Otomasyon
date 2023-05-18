@@ -47,5 +47,17 @@ namespace WindowsFormsApp1
             bgl.baglanti().Close();
 
         }
+
+        private void FormHastaGiris_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormGiris fr1 = new FormGiris();
+            fr1.Show();
+            this.Hide();
+        }
     }
 }

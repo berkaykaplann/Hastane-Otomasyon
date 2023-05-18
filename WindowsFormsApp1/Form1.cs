@@ -38,5 +38,10 @@ namespace WindowsFormsApp1
             fr.Show();
             this.Hide();
         }
+
+        private void FormGiris_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
