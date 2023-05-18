@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBoxid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -49,7 +50,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,9 +67,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(5, 5);
+            this.groupBox1.Location = new System.Drawing.Point(5, 98);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(367, 201);
+            this.groupBox1.Size = new System.Drawing.Size(367, 108);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "HASTA BİLGİLERİ";
@@ -77,8 +78,8 @@
             // 
             this.lblTC.AutoSize = true;
             this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTC.ForeColor = System.Drawing.Color.Blue;
-            this.lblTC.Location = new System.Drawing.Point(122, 129);
+            this.lblTC.ForeColor = System.Drawing.Color.Black;
+            this.lblTC.Location = new System.Drawing.Point(123, 69);
             this.lblTC.Name = "lblTC";
             this.lblTC.Size = new System.Drawing.Size(120, 22);
             this.lblTC.TabIndex = 3;
@@ -88,8 +89,8 @@
             // 
             this.lblADSOYAD.AutoSize = true;
             this.lblADSOYAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblADSOYAD.ForeColor = System.Drawing.Color.Blue;
-            this.lblADSOYAD.Location = new System.Drawing.Point(122, 79);
+            this.lblADSOYAD.ForeColor = System.Drawing.Color.Black;
+            this.lblADSOYAD.Location = new System.Drawing.Point(123, 35);
             this.lblADSOYAD.Name = "lblADSOYAD";
             this.lblADSOYAD.Size = new System.Drawing.Size(96, 22);
             this.lblADSOYAD.TabIndex = 2;
@@ -99,8 +100,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 79);
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(7, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 1;
@@ -110,8 +111,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(41, 129);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(42, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 0;
@@ -138,6 +139,18 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RANDEVU PANELİ";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Brown;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(100, 355);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(239, 41);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Ana Sayfaya Dön";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBoxid
             // 
@@ -283,17 +296,17 @@
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
-            // button2
+            // label4
             // 
-            this.button2.BackColor = System.Drawing.Color.Brown;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(100, 355);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(239, 41);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Ana Sayfaya Dön";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(10, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(312, 66);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Aktif Randevular kısmında \r\nilgili bölümden randevu seçtikten \r\nsonra şikayetiniz" +
+    "i yazıp randevu alınız.\r\n";
             // 
             // HastaDetay
             // 
@@ -302,6 +315,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1243, 646);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -322,6 +336,7 @@
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -348,5 +363,6 @@
         private System.Windows.Forms.TextBox textBoxid;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
     }
 }

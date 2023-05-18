@@ -136,14 +136,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(228, 344);
+            this.button1.Location = new System.Drawing.Point(185, 344);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 51);
+            this.button1.Size = new System.Drawing.Size(229, 45);
             this.button1.TabIndex = 32;
             this.button1.Text = "GÜNCELLE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Doktor_Bilgi_Düzenleme
             // 

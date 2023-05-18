@@ -153,35 +153,39 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(85, 339);
+            this.button1.Location = new System.Drawing.Point(25, 325);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 32);
+            this.button1.Size = new System.Drawing.Size(270, 37);
             this.button1.TabIndex = 11;
             this.button1.Text = "Ekle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.Info;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(130, 390);
+            this.button2.Location = new System.Drawing.Point(28, 406);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 30);
+            this.button2.Size = new System.Drawing.Size(267, 30);
             this.button2.TabIndex = 12;
             this.button2.Text = "Güncelle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Brown;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(207, 339);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(28, 367);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 32);
+            this.button3.Size = new System.Drawing.Size(267, 32);
             this.button3.TabIndex = 13;
             this.button3.Text = "Sil";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Doktor_Paneli

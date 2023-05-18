@@ -54,5 +54,29 @@ namespace WindowsFormsApp1
             fr.TCNO = lblTC.Text;
             fr.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Duyurular fr=new Duyurular();
+            fr.Show();
+        }
+
+       private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormGiris fr=new FormGiris();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            richTextBoxSikayet.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
+        }
     }
 }

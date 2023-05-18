@@ -40,5 +40,20 @@ namespace WindowsFormsApp1
         {
             //Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update Table_Doktor set DoktorAd=@p1,DoktorSoyad=@p2,DoktorBrans=@p3,DoktorSifre=@p4 where DoktorTC=@p5", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", textBoxAd.Text);
+            komut.Parameters.AddWithValue("@p2", textBoxSoyad.Text);
+            komut.Parameters.AddWithValue("@p3", comboBoxBrans.Text);
+            komut.Parameters.AddWithValue("@p4", textBoxSifre.Text);
+            komut.Parameters.AddWithValue("@p5", maskedTextBoxTC.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Bilgiler Güncellendi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+
+        }
     }
 }
