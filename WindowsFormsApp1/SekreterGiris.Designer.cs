@@ -95,7 +95,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(235, 21);
+            this.label1.Location = new System.Drawing.Point(219, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 44);
             this.label1.TabIndex = 14;
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(660, 389);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);

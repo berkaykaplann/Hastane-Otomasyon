@@ -146,7 +146,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
             this.label2.Location = new System.Drawing.Point(6, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 20);
@@ -157,7 +157,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
             this.label1.Location = new System.Drawing.Point(41, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
@@ -180,14 +180,14 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(365, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(367, 480);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "RANDEVU PANELİ";
+            this.groupBox3.Text = "RANDEVU OLUŞTURMA (Doktor için)";
             // 
             // button2
             // 
@@ -207,7 +207,7 @@
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
             this.checkBox1.Location = new System.Drawing.Point(119, 351);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(111, 29);
+            this.checkBox1.Size = new System.Drawing.Size(103, 26);
             this.checkBox1.TabIndex = 12;
             this.checkBox1.Text = "DURUM";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             this.maskedTextBox3.Location = new System.Drawing.Point(119, 305);
             this.maskedTextBox3.Mask = "00000000000";
             this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(197, 30);
+            this.maskedTextBox3.Size = new System.Drawing.Size(197, 28);
             this.maskedTextBox3.TabIndex = 11;
             // 
             // comboBoxDoktor
@@ -225,7 +225,7 @@
             this.comboBoxDoktor.FormattingEnabled = true;
             this.comboBoxDoktor.Location = new System.Drawing.Point(119, 254);
             this.comboBoxDoktor.Name = "comboBoxDoktor";
-            this.comboBoxDoktor.Size = new System.Drawing.Size(197, 33);
+            this.comboBoxDoktor.Size = new System.Drawing.Size(197, 30);
             this.comboBoxDoktor.TabIndex = 10;
             // 
             // comboBoxBrans
@@ -233,7 +233,7 @@
             this.comboBoxBrans.FormattingEnabled = true;
             this.comboBoxBrans.Location = new System.Drawing.Point(119, 199);
             this.comboBoxBrans.Name = "comboBoxBrans";
-            this.comboBoxBrans.Size = new System.Drawing.Size(197, 33);
+            this.comboBoxBrans.Size = new System.Drawing.Size(197, 30);
             this.comboBoxBrans.TabIndex = 9;
             this.comboBoxBrans.SelectedIndexChanged += new System.EventHandler(this.comboBoxBrans_SelectedIndexChanged);
             // 
@@ -242,7 +242,7 @@
             this.maskedTextBoxSaat.Location = new System.Drawing.Point(119, 154);
             this.maskedTextBoxSaat.Mask = "00:00";
             this.maskedTextBoxSaat.Name = "maskedTextBoxSaat";
-            this.maskedTextBoxSaat.Size = new System.Drawing.Size(197, 30);
+            this.maskedTextBoxSaat.Size = new System.Drawing.Size(197, 28);
             this.maskedTextBoxSaat.TabIndex = 8;
             this.maskedTextBoxSaat.ValidatingType = typeof(System.DateTime);
             // 
@@ -251,7 +251,7 @@
             this.maskedTextBoxTarih.Location = new System.Drawing.Point(119, 109);
             this.maskedTextBoxTarih.Mask = "00/00/0000";
             this.maskedTextBoxTarih.Name = "maskedTextBoxTarih";
-            this.maskedTextBoxTarih.Size = new System.Drawing.Size(197, 30);
+            this.maskedTextBoxTarih.Size = new System.Drawing.Size(197, 28);
             this.maskedTextBoxTarih.TabIndex = 7;
             this.maskedTextBoxTarih.ValidatingType = typeof(System.DateTime);
             // 
@@ -259,7 +259,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(119, 68);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 30);
+            this.textBox1.Size = new System.Drawing.Size(197, 28);
             this.textBox1.TabIndex = 6;
             // 
             // label8
@@ -453,7 +453,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1175, 642);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);

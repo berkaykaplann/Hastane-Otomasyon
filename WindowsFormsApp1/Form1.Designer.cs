@@ -43,13 +43,14 @@
             // 
             // buttonHastaGiris
             // 
+            this.buttonHastaGiris.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonHastaGiris.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHastaGiris.BackgroundImage")));
             this.buttonHastaGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonHastaGiris.Location = new System.Drawing.Point(85, 265);
             this.buttonHastaGiris.Name = "buttonHastaGiris";
             this.buttonHastaGiris.Size = new System.Drawing.Size(264, 179);
             this.buttonHastaGiris.TabIndex = 0;
-            this.buttonHastaGiris.UseVisualStyleBackColor = true;
+            this.buttonHastaGiris.UseVisualStyleBackColor = false;
             this.buttonHastaGiris.Click += new System.EventHandler(this.buttonHastaGiris_Click);
             // 
             // buttonDoktorGiris
@@ -88,7 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(192, 47);
+            this.label1.Location = new System.Drawing.Point(189, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(833, 106);
             this.label1.TabIndex = 5;
@@ -140,7 +141,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1148, 649);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

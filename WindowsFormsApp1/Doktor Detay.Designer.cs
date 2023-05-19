@@ -117,7 +117,7 @@
             this.groupBox2.Size = new System.Drawing.Size(405, 263);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RANDEVULAR";
+            this.groupBox2.Text = "Hastanın Şikayeti";
             // 
             // richTextBoxSikayet
             // 
@@ -134,7 +134,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(410, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(588, 601);
+            this.groupBox3.Size = new System.Drawing.Size(596, 601);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "RANDEVU LİSTESİ";
@@ -147,7 +147,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(582, 572);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 572);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -193,7 +193,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1008, 607);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
